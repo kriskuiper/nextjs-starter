@@ -48,6 +48,8 @@ jobs:
     needs:
       - cache-and-install
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Check codestyle
         run: pnpm run lint
 
@@ -57,5 +59,7 @@ jobs:
     needs:
       - cache-and-Install
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Run unit tests
         run: pnpm run test:unit
