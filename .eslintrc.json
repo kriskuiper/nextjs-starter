@@ -2,5 +2,13 @@
   "parserOptions": {
     "project": "tsconfig.json"
   },
-  "extends": ["next/core-web-vitals", "airbnb", "airbnb-typescript"]
+  "extends": ["airbnb", "airbnb-typescript", "next/core-web-vitals"],
+  "overrides": [
+    {
+      "files": ["app/api/**"],
+      "rules": {
+        "import/prefer-default-export": "off"
+      }
+    }
+  ]
 }
