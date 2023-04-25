@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:unit": "vitest run"
+    "test:unit": "vitest run",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "next": "13.2.3",
@@ -15,6 +17,13 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.7",
+    "@storybook/addon-interactions": "^7.0.7",
+    "@storybook/addon-links": "^7.0.7",
+    "@storybook/blocks": "^7.0.7",
+    "@storybook/nextjs": "^7.0.7",
+    "@storybook/react": "^7.0.7",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@testing-library/dom": "^9.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
@@ -34,8 +43,10 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.6.11",
     "jsdom": "^21.1.0",
     "prettier": "^2.8.4",
+    "storybook": "^7.0.7",
     "typescript": "^4.9.5",
     "vite": "^4.1.4",
     "vitest": "^0.29.2"
